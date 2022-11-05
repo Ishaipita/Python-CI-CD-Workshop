@@ -1,6 +1,4 @@
 - 👋 Hi, I’m @Ishaipita
-- 👀 I’m interested in cyber MH.fc 
-- 🌱 I’m currently learning cyber 
  📫 How to reach me ishaipita21@icloud.com
  ig.ishaipita
 
