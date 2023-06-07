@@ -1,23 +1,8 @@
-version: 2.1
-executors:
-  my-custom-executor:
-    docker:
-      - image: cimg/base:stable
-        auth:
-          # ensure you have first added these secrets
-          # visit app.circleci.com/settings/project/github/Ishaipita/Ishaipita/environment-variables
-          username: $DOCKER_HUB_USER
-          password: $DOCKER_HUB_PASSWORD
-jobs:
-  my-job-name:
 
-    executor: my-custom-executor
-    steps:
-      - checkout
-      - run: |
-          # echo Hello, World!
-
-workflows:
-  my-custom-workflow:
-    jobs:
-      - my-job-name
+      orbs:
+  docker: circleci/docker@1.7.0
+  workflows:
+    example-workflow:
+      jobs:
+        - docker/publish:
+            image: gg 
