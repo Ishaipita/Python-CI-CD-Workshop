@@ -1,8 +1,0 @@
-
-      orbs:
-  docker: circleci/docker@1.7.0
-  workflows:
-    example-workflow:
-      jobs:
-        - docker/publish:
-            image: gg 
